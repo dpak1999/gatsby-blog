@@ -2,6 +2,7 @@
 
 import React from "react";
 import { Global, css } from "@emotion/react";
+import Header from "./header";
 
 const Layout = ({ children }) => (
   <>
@@ -22,7 +23,8 @@ const Layout = ({ children }) => (
           line-height: 1.4;
           color: #555;
           font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-            Helvetica, Arial, sans-serif;
+            Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+            "Segoe UI Symbol";
         }
         > div {
           margin-top: 0;
@@ -51,8 +53,16 @@ const Layout = ({ children }) => (
         }
       `}
     />
-    <header></header>
-    <main>{children}</main>
+    <Header />
+    <main
+      css={css`
+        margin: 2rem auto;
+        max-width: 90vw;
+        width: 550px;
+      `}
+    >
+      {children}
+    </main>
   </>
 );
 

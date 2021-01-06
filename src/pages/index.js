@@ -13,6 +13,6 @@ export default () => (
         👋👋
       </span>
     </p>
-    <Link to="/about">Learn more about me &rarr;</Link>
+    <Link to="/about/">Learn more about me &rarr;</Link>
   </Layout>
 );
