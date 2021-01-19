@@ -58,7 +58,10 @@ const Hero = () => {
       <TextBox>
         <h1>Gatsby blog App &hearts;</h1>
         <p>
-          Hello there 👋👋{" "}
+          Hello there{" "}
+          <span role="img" aria-label="wave">
+            👋👋
+          </span>
           <Link to="/about/">Learn more about me...&rarr;</Link>
         </p>
       </TextBox>
